@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="775.0" prefWidth="1045.0" style="-fx-background-color: #FFA000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.mapgui.GUIController">
+   <children>
+      <ListView fx:id="ExListView" layoutX="385.0" layoutY="423.0" prefHeight="327.0" prefWidth="424.0" style="-fx-background-color: #FFC107; -fx-font: 12pt &quot;Verdana&quot;;" />
+      <Button layoutX="847.0" layoutY="610.0" mnemonicParsing="false" onAction="#OneStepButtonClicked" prefHeight="47.0" prefWidth="170.0" style="-fx-background-color: #FFEB3B;" text="ONE STEP">
+         <font>
+            <Font name="Verdana" size="26.0" />
+         </font>
+      </Button>
+      <Label layoutX="386.0" layoutY="391.0" text="List of programs:">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="401.0" layoutY="4.0" text="Program state ids">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="idsList" layoutX="385.0" layoutY="35.0" prefHeight="339.0" prefWidth="200.0" style="-fx-background-color: #FFC107; -fx-font: 12pt &quot;Verdana&quot;;" />
+      <TextField fx:id="NoPrograms" layoutX="895.0" layoutY="423.0" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #FFC107; -fx-font: 12pt &quot;Verdana&quot;;" />
+      <Label layoutX="838.0" layoutY="391.0" text="No. of ProgramStates">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="SymTable" layoutX="618.0" layoutY="33.0" prefHeight="339.0" prefWidth="200.0" style="-fx-font: 12pt &quot;Verdana&quot;;">
+        <columns>
+          <TableColumn fx:id="SVariable" prefWidth="101.0" text="VARIABLE" />
+          <TableColumn fx:id="Svalue" prefWidth="98.0" text="VALUE" />
+        </columns>
+      </TableView>
+      <TableView fx:id="HeapTable" layoutX="847.0" layoutY="35.0" prefHeight="339.0" prefWidth="200.0" style="-fx-font: 12pt &quot;Verdana&quot;;">
+         <columns>
+            <TableColumn fx:id="HAdress" prefWidth="101.0" text="ADDRESS" />
+            <TableColumn fx:id="HValue" prefWidth="98.0" text="VALUE" />
+         </columns>
+      </TableView>
+      <Label layoutX="657.0" layoutY="4.0" text="Symbol Table">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font></Label>
+      <Label layoutX="909.0" layoutY="4.0" text="Heap ">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font></Label>
+      <ListView fx:id="StackList" layoutX="14.0" layoutY="46.0" prefHeight="214.0" prefWidth="298.0" style="-fx-font: 12pt &quot;Verdana&quot;;" />
+      <Button layoutX="847.0" layoutY="514.0" mnemonicParsing="false" onAction="#SelectButtonClicked" prefHeight="51.0" prefWidth="160.0" style="-fx-background-color: #FFEB3B;" text="SELECT">
+         <font>
+            <Font name="Verdana" size="26.0" />
+         </font>
+      </Button>
+      <Label layoutX="138.0" layoutY="16.0" text="Stack">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font></Label>
+      <ListView fx:id="OutList" layoutX="14.0" layoutY="308.0" prefHeight="198.0" prefWidth="298.0" style="-fx-font: 12pt &quot;Verdana&quot;;" />
+      <ListView fx:id="FileTableList" layoutX="14.0" layoutY="550.0" prefHeight="198.0" prefWidth="298.0" style="-fx-font: 12pt &quot;Verdana&quot;;" />
+      <Label layoutX="149.0" layoutY="276.0" text="Out">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font></Label>
+      <Label layoutX="126.0" layoutY="517.0" text="File Table">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
